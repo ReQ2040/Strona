@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Uzbrojenie lotnicze | Mysliwce Świata</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background: linear-gradient(180deg, #0b0e13 0%, #141a2e 50%, #0b0e13 100%);
+    color: #f1f1f1;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar { background: rgba(0,0,0,0.9); }
+
+.hero {
+    height: 70vh;
+    background: url("img/hero_uzbrojenie.jpg") center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1 { font-size: 4rem; text-shadow: 0 0 40px black; }
+.hero p { font-size: 1.2rem; max-width: 900px; margin: auto; }
+
+.section {
+    padding: 100px 0;
+}
+.section h2 {
+    color: #7c88ff;
+    margin-bottom: 40px;
+    border-left: 6px solid #7c88ff;
+    padding-left: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #141824;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #222;
+    box-shadow: 0 0 45px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card h3 { color: #7c88ff; margin-bottom: 15px; }
+.card p { color: #f1f1f1; margin-top: 10px; }
+
+footer {
+    background: black;
+    padding: 40px;
+    text-align: center;
+    color: #888;
+}
+
+@media(max-width:768px){
+    .hero h1 { font-size: 2.8rem; }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Mysliwce Świata</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link" href="modele.html">Modele</a></li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="technologie.html">Technologie</a></li>
+        <li class="nav-item"><a class="nav-link active" href="uzbrojenie.html">Uzbrojenie</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <h1>UZBROJENIE LOTNICZE</h1>
+    <p>Uzbrojenie współczesnych myśliwców bojowych to najbardziej zaawansowany segment technologii wojskowej.</p>
+  </div>
+</div>
+
+<main class="container">
+
+<section class="section">
+<h2>Rakiety powietrze–powietrze</h2>
+<div class="grid">
+  <div class="card">
+    <h3>AIM-120 AMRAAM</h3>
+    <p>Amerykańska rakieta średniego zasięgu. System „wystrzel i zapomnij” pozwala pilotowi na koncentrację na innych celach. Wyposażona w aktywne naprowadzanie radarowe, zdolna do zwalczania wielu celów jednocześnie. Modernizacje obejmują większy zasięg, odporność na zakłócenia elektroniczne, szybsze systemy naprowadzania i integrację sieciową z samolotami AWACS.</p>
+  </div>
+
+  <div class="card">
+    <h3>Meteor</h3>
+    <p>Europejska rakieta dalekiego zasięgu z silnikiem strumieniowym. Utrzymuje wysoką prędkość przez cały lot, zapewniając skuteczność w zwalczaniu najnowocześniejszych myśliwców. Integracja z systemami sieciowymi pozwala innym samolotom kierować rakietą w locie. Wersje ulepszone posiadają większy zasięg i zwiększoną odporność na zakłócenia radarowe.</p>
+  </div>
+
+  <div class="card">
+    <h3>Python-5</h3>
+    <p>Izraelska rakieta bliskiego zasięgu, współpracująca z systemem w helmie pilota. Pozwala atakować cel pod każdym kątem, wyposażona w czujniki IR, zdolna do śledzenia wielu celów naraz. Wersje ulepszone umożliwiają zwalczanie celów wielokrotnych i integrację z siecią bojową.</p>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<h2>Uzbrojenie powietrze–ziemia</h2>
+<div class="grid">
+  <div class="card">
+    <h3>JDAM – bomby GPS</h3>
+    <p>Przekształca zwykłą bombę w broń precyzyjną. Integracja GPS i INS zapewnia trafienie celu przy minimalnych stratach ubocznych. Nowe wersje zwiększają zasięg i siłę wybuchu, pozwalając na niszczenie bunkrów, stanowisk dowodzenia i strategicznych struktur przeciwnika.</p>
+  </div>
+
+  <div class="card">
+    <h3>Storm Shadow / SCALP</h3>
+    <p>Pocisk manewrujący dalekiego zasięgu, stealth, zdolny do lotu na niskiej wysokości. Przeznaczony do niszczenia strategicznych celów w głębi terytorium wroga. Wyposażony w GPS i INS oraz zdolny do omijania przeszkód terenowych. Wersje najnowsze posiadają większy zasięg i integrację z siecią bojową.</p>
+  </div>
+
+  <div class="card">
+    <h3>AGM-65 Maverick</h3>
+    <p>Rakieta taktyczna do zwalczania pojazdów opancerzonych i instalacji naziemnych. Możliwość naprowadzania IR, TV lub laserowo. Modernizacje dodały większy zasięg, silniejszy ładunek i integrację z systemami sieciowymi, co zwiększa skuteczność w złożonych operacjach bojowych.</p>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<h2>Systemy przyszłości</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Broń hipersoniczna</h3>
+    <p>Prace nad pociskami hipersonicznymi pozwalają na uderzenia w cele w kilka minut z ogromną precyzją. Integracja z AI i sensorami w czasie rzeczywistym zwiększa efektywność. Systemy te mogą być łańcuchowo połączone z radarami i samolotami bojowymi.</p>
+  </div>
+
+  <div class="card">
+    <h3>Broń laserowa</h3>
+    <p>Laserowe systemy pokładowe będą w stanie unieszkodliwiać cele powietrzne i naziemne z dużą prędkością. Zaawansowane systemy śledzenia i AI pozwalają na automatyczne namierzanie wrogich celów przy minimalnym udziale pilota.</p>
+  </div>
+
+  <div class="card">
+    <h3>Autonomiczne drony bojowe</h3>
+    <p>Systemy roju dronów z AI pozwalają na automatyczne wykrywanie, śledzenie i eliminację celów. Integracja z myśliwcami i satelitami tworzy sieć bojową o globalnym zasięgu.</p>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>
+Franciszek Sabiniarz - Strona o myśliwcach
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

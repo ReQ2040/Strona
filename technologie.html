@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Technologie Myśliwców | Centrum Systemów Bojowych</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:linear-gradient(180deg,#0b0e13,#141a2e,#0b0e13);
+    color:#f1f1f1;
+}
+.navbar{background:rgba(0,0,0,.9)}
+
+.hero-tech{
+    height:85vh;
+    background:
+        radial-gradient(circle at top,#1a1f3a,transparent 60%),
+        url("img/bg_tech.jpg") center/cover fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.hero-tech h1{
+    font-size:4.2rem;
+    text-shadow:0 0 40px black;
+}
+.hero-tech p{max-width:900px;margin:auto;line-height:2}
+
+.section{padding:120px 0}
+
+.system-panel{
+    background:#141824;
+    border-radius:25px;
+    box-shadow:0 0 60px rgba(0,0,0,.6);
+    overflow:hidden;
+}
+
+.system-list{background:#0b0e13}
+.system-list button{
+    width:100%;
+    border:0;
+    padding:25px;
+    background:transparent;
+    color:#ccc;
+    text-align:left;
+    font-weight:bold;
+    border-bottom:1px solid #222;
+}
+.system-list button:hover,
+.system-list button.active{
+    background:#141824;
+    color:#7c88ff;
+}
+
+.system-content{padding:50px}
+.system-content h3{color:#7c88ff;margin-bottom:25px}
+.system-content p{line-height:2;font-size:1.05rem}
+
+.progress{height:18px;background:#05070c}
+.progress-bar{background:#7c88ff}
+
+.hud-box{
+    border:1px solid #2a2f55;
+    padding:35px;
+    border-radius:20px;
+    background:rgba(20,24,36,.85);
+    height:100%;
+}
+
+.tech-long{
+    background:#141824;
+    border-radius:25px;
+    padding:60px;
+    box-shadow:0 0 50px rgba(0,0,0,.6);
+}
+
+footer{
+    background:black;
+    padding:40px 0;
+    text-align:center;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Myśliwce Świata</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link" href="modele.html">Modele</a></li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link active" href="technologie.html">Technologie</a></li>
+        <li class="nav-item"><a class="nav-link" href="uzbrojenie.html">Uzbrojenie</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-tech">
+<div>
+<h1>Centrum Technologii Bojowych</h1>
+<p class="fs-5 mt-4">
+Współczesny myśliwiec to zintegrowany system walki,
+łączący sensory, algorytmy i uzbrojenie w jedną
+platformę dominacji powietrznej.
+</p>
+</div>
+</section>
+
+<section class="section">
+<div class="container-fluid">
+<div class="row justify-content-center">
+<div class="col-xl-11">
+<div class="system-panel row g-0">
+
+<div class="col-md-4 system-list">
+<button class="active" onclick="loadSys(0)">Stealth i Sygnatura</button>
+<button onclick="loadSys(1)">Radar AESA</button>
+<button onclick="loadSys(2)">Walka Elektroniczna</button>
+<button onclick="loadSys(3)">Fuzja Danych</button>
+<button onclick="loadSys(4)">Sztuczna Inteligencja</button>
+<button onclick="loadSys(5)">Uzbrojenie Precyzyjne</button>
+<button onclick="loadSys(6)">Integracja z Dronami</button>
+</div>
+
+<div class="col-md-8 system-content">
+<h3 id="sysTitle">Stealth i Sygnatura Radarowa</h3>
+<p id="sysDesc">
+Technologia stealth redukuje wykrywalność myśliwca poprzez geometrię,
+materiały RAM, wewnętrzne komory uzbrojenia oraz zarządzanie emisjami.
+</p>
+<p>
+Długotrwałe badania wykazały, że zdolność do operowania w głębi obrony
+przeciwnika bez wykrycia jest kluczowa dla nowoczesnych operacji powietrznych.
+</p>
+
+<div class="mt-4">
+<p>POZIOM ZAAWANSOWANIA</p>
+<div class="progress">
+<div id="sysBar" class="progress-bar" style="width:95%">95%</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="tech-long">
+<h2 class="mb-4">Systemy jako fundament przewagi</h2>
+<p>
+Każdy nowoczesny myśliwiec bojowy jest projektowany jako element
+szerszego ekosystemu pola walki. Samolot nie działa w izolacji,
+lecz współpracuje z satelitami, radarami naziemnymi, okrętami
+oraz innymi platformami powietrznymi.
+</p>
+<p>
+Rozwój technologii cyfrowych sprawił, że przewaga nie wynika już
+wyłącznie z prędkości czy zwrotności, ale z szybkości przetwarzania
+informacji oraz zdolności do podejmowania decyzji szybciej niż przeciwnik.
+</p>
+<p>
+W praktyce oznacza to, że pilot otrzymuje gotowy obraz sytuacji,
+a systemy pokładowe przejmują większość obciążenia poznawczego,
+pozwalając skupić się na zadaniu bojowym.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="text-center mb-5">Scenariusze operacyjne</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="hud-box">
+<h4>BVR – Walka na dystans</h4>
+<p>
+Starcia poza zasięgiem wzroku opierają się na przewadze sensorów,
+wczesnym wykryciu oraz synchronizacji z innymi jednostkami.
+</p>
+<p>
+W praktyce decyduje ten, kto pierwszy zidentyfikuje cel
+i skutecznie przeprowadzi atak rakietowy.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="hud-box">
+<h4>Dogfight – Zwarcie</h4>
+<p>
+Pomimo rozwoju technologii BVR, walka manewrowa nadal pozostaje
+istotnym elementem szkolenia pilotów.
+</p>
+<p>
+Systemy wspomagania, hełmy celownicze i wektorowanie ciągu
+dają przewagę w najbardziej dynamicznych starciach.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="hud-box">
+<h4>Penetracja OPL</h4>
+<p>
+Operacje w głębi obrony przeciwnika wymagają synergii stealth,
+walki elektronicznej oraz precyzyjnego planowania misji.
+</p>
+<p>
+To najbardziej wymagający scenariusz dla każdej platformy bojowej.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+ 
+<section class="section">
+<div class="container">
+<div class="tech-long">
+<h2 class="mb-4">Architektura nowoczesnych systemów bojowych</h2>
+
+<p>
+Nowoczesny myśliwiec bojowy składa się z wielu warstw funkcjonalnych,
+które współpracują w czasie rzeczywistym. Każda z nich odpowiada
+za inny aspekt prowadzenia działań bojowych – od detekcji,
+przez analizę, aż po wykonanie decyzji.
+</p>
+
+<p>
+Warstwa sensoryczna obejmuje radary, systemy IRST, czujniki
+emisji elektromagnetycznej oraz dane satelitarne. Warstwa
+przetwarzania łączy te informacje, filtruje je i prezentuje
+pilotowi w postaci czytelnego obrazu taktycznego.
+</p>
+
+<p>
+Na szczycie architektury znajduje się warstwa decyzyjna,
+wspierana przez algorytmy sztucznej inteligencji,
+która analizuje zagrożenia i rekomenduje optymalne działania.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="tech-long">
+<h2 class="mb-4">C4ISR – Przewaga informacyjna</h2>
+
+<p>
+C4ISR (Command, Control, Communications, Computers, Intelligence,
+Surveillance and Reconnaissance) stanowi kręgosłup
+współczesnych operacji powietrznych.
+</p>
+
+<p>
+Myśliwiec nie jest już samodzielną jednostką, lecz węzłem
+w globalnej sieci bojowej. Dane pozyskiwane przez jedną platformę
+są natychmiast udostępniane innym uczestnikom operacji.
+</p>
+
+<p>
+Szybkość obiegu informacji decyduje o przeżywalności
+oraz skuteczności misji. Ten, kto szybciej przetworzy dane
+i podejmie decyzję, zyskuje decydującą przewagę.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="text-center mb-5">Systemy przyszłości</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="hud-box classified">
+<h4>Predykcyjne AI pola walki</h4>
+<p>
+System analizuje setki tysięcy scenariuszy w czasie rzeczywistym,
+przewidując ruchy przeciwnika z wyprzedzeniem kilku minut.
+</p>
+<p>
+Pozwala to na reagowanie zanim zagrożenie stanie się widoczne
+dla człowieka.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="hud-box classified">
+<h4>Aktywne maskowanie multispektralne</h4>
+<p>
+Dynamiczne dostosowywanie sygnatury radarowej, cieplnej
+i elektromagnetycznej do warunków środowiskowych.
+</p>
+<p>
+Platforma staje się praktycznie niewidzialna
+dla większości sensorów.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="hud-box classified">
+<h4>Autonomiczne decyzje bojowe</h4>
+<p>
+W sytuacjach krytycznych system może samodzielnie
+wykonać manewr unikowy lub uderzenie,
+minimalizując czas reakcji.
+</p>
+<p>
+Rola pilota ewoluuje w kierunku nadzorcy misji.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="tech-long">
+<h2 class="mb-4">Symulacja pola walki</h2>
+
+<p>
+Podczas symulacji starcia wielodomenowego,
+myśliwiec działa jednocześnie w przestrzeni
+powietrznej, elektromagnetycznej i informacyjnej.
+</p>
+
+<p>
+Algorytmy analizują każdy ruch przeciwnika,
+rekomendując zmiany trasy, wysokości oraz trybu pracy sensorów.
+</p>
+
+<p>
+Czas od wykrycia do neutralizacji celu
+liczony jest w sekundach, a decyzje podejmowane
+są szybciej niż możliwości reakcji przeciwnika.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="tech-long">
+<h2 class="mb-4">Ograniczenia i wyzwania technologiczne</h2>
+
+<p>
+Wysoki poziom zaawansowania technologicznego niesie ze sobą
+również ryzyka. Zależność od systemów cyfrowych
+czyni platformy podatnymi na cyberataki.
+</p>
+
+<p>
+Integracja wielu systemów zwiększa złożoność
+utrzymania oraz kosztów eksploatacji.
+</p>
+
+<p>
+Dlatego rozwój technologii musi iść w parze
+z zabezpieczeniami oraz redundancją kluczowych funkcji.
+</p>
+</div>
+</div>
+</section>
+
+<footer>
+Franciszek Sabiniarz - Strona o myśliwcach
+</footer>
+
+<script>
+const systems=[
+{t:"Stealth i Sygnatura Radarowa",d:"Stealth redukuje wykrywalność myśliwca, zapewniając przewagę pierwszego uderzenia oraz możliwość działania w środowisku silnej obrony.",p:95},
+{t:"Radar AESA",d:"Radar AESA pozwala na jednoczesne śledzenie wielu celów oraz prowadzenie działań pasywnych.",p:90},
+{t:"Walka Elektroniczna",d:"Systemy EW zakłócają sensory przeciwnika i chronią własną platformę.",p:95},
+{t:"Fuzja Danych",d:"Łączenie danych z wielu sensorów w jeden obraz taktyczny.",p:85},
+{t:"Sztuczna Inteligencja",d:"AI wspiera pilota w analizie i podejmowaniu decyzji.",p:85},
+{t:"Uzbrojenie Precyzyjne",d:"Nowoczesne pociski zapewniają wysoką skuteczność uderzeń.",p:90},
+{t:"Integracja z Dronami",d:"Myśliwiec zarządza rojem platform bezzałogowych.",p:80}
+];
+
+function loadSys(i){
+ document.querySelectorAll(".system-list button").forEach(b=>b.classList.remove("active"));
+ document.querySelectorAll(".system-list button")[i].classList.add("active");
+ sysTitle.innerText=systems[i].t;
+ sysDesc.innerText=systems[i].d;
+ sysBar.style.width=systems[i].p+"%";
+ sysBar.innerText=systems[i].p+"%";
+}
+
+function toggleClassified(){
+ document.body.classList.toggle("classified");
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

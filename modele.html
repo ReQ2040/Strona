@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Modele Myśliwców | Raport Wojskowy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background:#0b0e13;
+    color:#f1f1f1;
+}
+
+.navbar {
+    background:rgba(0,0,0,0.9);
+}
+
+.hero {
+    height:65vh;
+    background:url("img/hero_modele.jpg") center/cover fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.hero h1 {
+    font-size:3.5rem;
+    text-shadow:0 0 30px black;
+}
+
+.section-dark {
+    padding:90px 0;
+    background:linear-gradient(180deg,#0b0e13,#141a2e);
+}
+.section-image {
+    padding:90px 0;
+    background:url("img/bg_tech.jpg") center/cover fixed;
+}
+
+.model-card {
+    background:#141824;
+    border-radius:15px;
+    padding:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.model-card:hover {
+    transform:scale(1.02);
+}
+.model-card img {
+    width:100%;
+    max-height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.model-text {
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.7s ease;
+    line-height:1.7;
+    font-size:0.95rem;
+}
+.model-text.show {
+    max-height:3000px;
+}
+
+.timeline {
+    border-left:3px solid #4e5bff;
+    padding-left:30px;
+}
+.timeline-item {
+    margin-bottom:30px;
+}
+.timeline-item span {
+    color:#7c88ff;
+    font-weight:bold;
+}
+
+.classified-box {
+    background:#050505;
+    border:1px solid darkred;
+    padding:15px;
+    margin-top:25px;
+    font-family:monospace;
+}
+.classified-box .status span {
+    color:red;
+    font-weight:bold;
+}
+.redacted {
+    color:#777;
+}
+.revealed {
+    display:none;
+    color:#00ff88;
+}
+
+.model-card img {
+    width: 100%;
+    height: 220px;      
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background:black;
+    padding:40px;
+    text-align:center;
+    color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Myśliwce Świata</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link active" href="modele.html">Modele</a></li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="technologie.html">Technologie</a></li>
+        <li class="nav-item"><a class="nav-link" href="uzbrojenie.html">Uzbrojenie</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Raport: Myśliwce Bojowe Świata</h1>
+<p class="fs-5">Dokument analityczny – lotnictwo wojskowe</p>
+</div>
+</section>
+
+<section class="section-dark">
+<div class="container">
+<h2 class="text-center mb-5">Ewolucja technologii myśliwców</h2>
+<div class="timeline">
+<div class="timeline-item"><span>1970–1980</span><p>Dominacja prędkości i walki manewrowej.</p></div>
+<div class="timeline-item"><span>1990–2000</span><p>Cyfrowa awionika i precyzyjne uzbrojenie.</p></div>
+<div class="timeline-item"><span>2000–2010</span><p>Stealth i wojna elektroniczna.</p></div>
+<div class="timeline-item"><span>2010–obecnie</span><p>Fuzja sensorów i przewaga informacyjna.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section-image text-center">
+<div class="container">
+<h2 class="mb-4">Globalni producenci myśliwców</h2>
+</div>
+</section>
+
+<section class="section-dark">
+<div class="container">
+<div class="row g-4">
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('kf21')">
+<h3>KF-21 Boramae – Korea Płd.</h3>
+<img src="kf1.jpg">
+<div id="kf21" class="model-text">
+<p>KF-21 Boramae to nowoczesny myśliwiec 4,5 generacji zaprojektowany przez Koreę Południową. Samolot ma wzmocnioną konstrukcję kadłuba i nowoczesny radar AESA. Jego systemy awioniki i walki elektronicznej pozwalają na przewagę w regionie Azji. Boramae cechuje wysoka manewrowość i możliwość integracji z nowoczesnym uzbrojeniem. Maszyna może wykonywać misje powietrze-powietrze oraz powietrze-ziemia. Program ma charakter strategiczny dla Korei. Samolot wspiera rozwój krajowego przemysłu obronnego. Jego produkcja ma potencjał eksportowy. KF-21 jest symbolem samowystarczalności technologicznej Korei. Maszyna stale przechodzi testy i modernizacje.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 1.8<br>Radar: AESA<br>Zasięg: 3 000 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('f16')">
+<h3>F-16 Fighting Falcon – USA</h3>
+<img src="f16.jpg">
+<div id="f16" class="model-text">
+<p>F-16 Fighting Falcon to jeden z najbardziej rozpowszechnionych myśliwców wielozadaniowych na świecie. Został zaprojektowany jako lekki, szybki i bardzo zwrotny samolot bojowy. Jego konstrukcja pozwala na wykonywanie misji powietrze–powietrze oraz powietrze–ziemia. F-16 posiada nowoczesną awionikę, radar oraz systemy walki elektronicznej. Samolot jest regularnie modernizowany i dostosowywany do współczesnych zagrożeń. Jest używany przez wiele państw NATO oraz sojuszników USA. F-16 łączy wysoką skuteczność bojową z relatywnie niskimi kosztami eksploatacji. Do dzisiaj pozostaje ważnym elementem sił powietrznych wielu krajów.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość maksymalna: Mach 2.2<br>Zasięg bojowy: 1 500 km<br>Radar: AESA AN/APG-83<br>Rola: myśliwiec wielozadaniowy<br>Zdolności: wysoka manewrowość, precyzyjne uderzenia<br>Status: szeroko używany przez NATO
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('kfir')">
+<h3>IAI Kfir – Izrael</h3>
+<img src="kfir.jpg">
+<div id="kfir" class="model-text">
+<p>IAI Kfir to izraelski wielozadaniowy myśliwiec opracowany na bazie Mirage. Został przystosowany do potrzeb Bliskiego Wschodu, wyposażony w silnik amerykański i nowoczesne systemy elektroniczne. Maszyna była wykorzystywana w licznych operacjach bojowych. Charakteryzuje się wysoką manewrowością i możliwością przenoszenia szerokiego arsenału broni. Kfir jest tani w utrzymaniu i nadaje się do szybkiego wdrożenia. Samolot służy jako symbol izraelskiej innowacyjności technologicznej. Jest stale modernizowany i rozwijany. Maszyna posiada zdolności przewagi informacyjnej w powietrzu. IAI Kfir jest jednym z filarów lotnictwa Izraela.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 2.0<br>Radar: AESA<br>Zasięg: 2 500 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('typhoon')">
+<h3>Eurofighter Typhoon – Europa</h3>
+<img src="euro.webp">
+<div id="typhoon" class="model-text">
+<p>Eurofighter Typhoon to europejski myśliwiec przewagi powietrznej opracowany wspólnie przez kilka państw UE. Samolot charakteryzuje się dużą manewrowością i nowoczesną awioniką. Może wykonywać misje powietrze-powietrze i powietrze-ziemia. Typhoon jest sukcesywnie modernizowany i wciąż unowocześniany. Integruje nowoczesne pociski i bomby precyzyjne. Maszyna jest wykorzystywana przez wiele państw NATO. Jest kluczowa w strategii obrony powietrznej Europy. Eurofighter Typhoon umożliwia szybkie reagowanie na zagrożenia. Jest symbolem współpracy europejskiej. Maszyna posiada systemy walki elektronicznej i wsparcia informacyjnego.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 2.0<br>Radar: AESA<br>Zasięg: 3 500 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('tejas')">
+<h3>HAL Tejas – Indie</h3>
+<img src="half.webp">
+<div id="tejas" class="model-text">
+<p>HAL Tejas to indyjski lekki myśliwiec wielozadaniowy opracowany w celu uniezależnienia kraju od importu. Maszyna ma nowoczesną awionikę i jest stopniowo modernizowana. Tejas jest lekki, zwrotny i zdolny do różnorodnych misji. Maszyna wspiera lokalny przemysł zbrojeniowy. Zapewnia przewagę powietrzną w regionie. Tejas posiada możliwość integracji nowoczesnych pocisków i systemów walki elektronicznej. Samolot przeszedł liczne testy bojowe. Jest symbolem indyjskiej samowystarczalności technologicznej. Maszyna ma potencjał eksportowy. Program Tejas jest kluczowym projektem obronnym Indii.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 1.8<br>Radar: AESA<br>Zasięg: 1 700 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('jf17')">
+<h3>JF-17 Thunder – Pakistan / Chiny</h3>
+<img src="jf.jpg">
+<div id="jf17" class="model-text">
+<p>JF-17 Thunder to lekki wielozadaniowy myśliwiec stworzony w ramach współpracy Pakistanu i Chin. Maszyna jest tanią, skuteczną i łatwą w utrzymaniu platformą bojową. Posiada nowoczesne systemy uzbrojenia oraz radar. Jest wykorzystywana w wielu misjach powietrze-powietrze i powietrze-ziemia. Samolot jest stale modernizowany. JF-17 zwiększa niezależność wojskową Pakistanu. Maszyna ma wersje eksportowe. Jest symbolem strategicznego partnerstwa. Posiada wysoką manewrowość i dobry zasięg. Samolot przeszedł liczne testy bojowe.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 1.6<br>Radar: AESA<br>Zasięg: 1 200 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('mig35')">
+<h3>MiG-35 – Rosja</h3>
+<img src="mig.webp">
+<div id="mig35" class="model-text">
+<p>MiG-35 to rosyjski wielozadaniowy myśliwiec 4++ generacji. Jest rozwinięciem rodziny MiG-29 z nowoczesną awioniką i radarami AESA. Maszyna cechuje się wysoką manewrowością, dużą prędkością i możliwością przenoszenia nowoczesnego uzbrojenia. MiG-35 może wykonywać misje powietrze-powietrze i powietrze-ziemia. Samolot jest częścią strategii modernizacji rosyjskiego lotnictwa. Posiada zaawansowane systemy walki elektronicznej i nawigacji. Maszyna zwiększa zdolności obronne i ofensywne. Jest eksportowana do wybranych krajów. MiG-35 to symbol rosyjskiej inżynierii lotniczej. Samolot stale przechodzi testy i udoskonalenia.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 2.25<br>Radar: AESA<br>Zasięg: 1 800 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('f18')">
+<h3>F/A-18 Super Hornet – USA</h3>
+<img src="f18.jpg">
+<div id="f18" class="model-text">
+<p>F/A-18 Super Hornet to nowoczesny myśliwiec pokładowy przeznaczony do operowania z lotniskowców. Samolot został zaprojektowany jako maszyna wielozadaniowa, zdolna do prowadzenia walk powietrznych oraz ataków naziemnych i morskich. Charakteryzuje się wysoką niezawodnością i odpornością na trudne warunki bojowe. Super Hornet posiada zaawansowany radar AESA oraz systemy walki elektronicznej. Jest podstawowym myśliwcem marynarki wojennej Stanów Zjednoczonych. Może przenosić szeroki wachlarz uzbrojenia precyzyjnego. Samolot zapewnia wysoką elastyczność operacyjną i szybkie reagowanie na zagrożenia.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 1.8<br>Zasięg: 2 000 km<br>Radar: AESA AN/APG-79
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('j35')">
+<h3>J-35 – Chiny</h3>
+<img src="j35.jpg">
+<div id="j35" class="model-text">
+<p>J-35 to chiński myśliwiec 5 generacji, rozwijany w celu zapewnienia przewagi powietrznej i wsparcia strategicznego. Maszyna posiada stealth, nowoczesne radary AESA i systemy walki elektronicznej. J-35 jest kluczową częścią chińskiej strategii morskiej i powietrznej. Samolot może wykonywać misje powietrze-powietrze oraz precyzyjne uderzenia na cele naziemne. Maszyna posiada dużą prędkość, manewrowość i zasięg. J-35 wspiera eksport technologii wojskowych Chin. Jest symbolem chińskiej autonomii technologicznej w lotnictwie wojskowym. Maszyna jest regularnie testowana i modernizowana.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 2.0<br>Radar: AESA<br>Zasięg: 2 500 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('f15')">
+<h3>F-15 Eagle – USA</h3>
+<img src="f15.jpg">
+<div id="f15" class="model-text">
+<p>F-15 Eagle to amerykański myśliwiec przewagi powietrznej, znany z wysokiej prędkości, manewrowości i skuteczności bojowej. Maszyna jest używana od lat 70. i wciąż jest modernizowana. Posiada nowoczesną awionikę, radar AESA i możliwość przenoszenia szerokiego wachlarza uzbrojenia. F-15 może wykonywać misje powietrze-powietrze oraz powietrze-ziemia. Samolot jest symbolem siły lotnictwa USA i sojuszników NATO. Charakteryzuje się niezawodnością i elastycznością w działaniu. Maszyna była testowana w wielu konfliktach i pozostaje kluczowym elementem obrony powietrznej.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 2.5<br>Radar: AESA<br>Zasięg: 3 500 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('gripen')">
+<h3>Saab Gripen – Szwecja</h3>
+<img src="jas.jpg">
+<div id="gripen" class="model-text">
+<p>Saab Gripen to szwedzki lekki myśliwiec wielozadaniowy, charakteryzujący się niskimi kosztami eksploatacji i nowoczesną awioniką. Maszyna może wykonywać misje powietrze-powietrze i powietrze-ziemia. Jest wykorzystywana przez Szwecję oraz kilka innych państw. Gripen cechuje się wysoką manewrowością, łatwością serwisowania i integracji nowych systemów. Maszyna posiada nowoczesne radary i systemy walki elektronicznej. Samolot jest symbolem innowacyjności szwedzkiego przemysłu lotniczego. Może działać w różnych warunkach klimatycznych. Gripen stale jest modernizowany i rozwijany.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 2.0<br>Radar: AESA<br>Zasięg: 3 200 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="model-card" onclick="toggleText('rafale')">
+<h3>Dassault Rafale – Francja</h3>
+<img src="rafa.webp">
+<div id="rafale" class="model-text">
+<p>Dassault Rafale to francuski myśliwiec wielozadaniowy 4,5 generacji, zdolny do działań powietrze-powietrze, powietrze-ziemia i morsko-lądowych. Maszyna posiada stealth, radar AESA i nowoczesną awionikę. Rafale jest elastyczny w operacjach bojowych i łatwy w integracji nowych systemów. Samolot może przenosić szeroką gamę precyzyjnych pocisków i bomb. Maszyna jest symbolem francuskiego przemysłu lotniczego i sił powietrznych. Rafale jest eksportowany do wybranych krajów i stale modernizowany. Posiada dużą manewrowość, zasięg i zdolności do prowadzenia kompleksowych misji bojowych.</p>
+<div class="classified-box">
+<p class="status">STATUS: <span>TAJNE</span></p>
+<div class="redacted">██████████████████████</div>
+<div class="revealed">
+Prędkość: Mach 1.8<br>Radar: AESA<br>Zasięg: 3 700 km
+</div>
+<button class="btn btn-sm btn-outline-danger mt-3" onclick="reveal(event)">ODTAJNIC</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+Franciszek Sabiniarz - Strona o myśliwcach
+</footer>
+
+<script>
+function toggleText(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle("show");
+}
+
+function reveal(e) {
+    e.stopPropagation();
+    const box = e.target.parentElement;
+    box.querySelector(".redacted").style.display = "none";
+    box.querySelector(".revealed").style.display = "block";
+    box.querySelector(".status span").innerText = "ODTAJNIONE";
+    e.target.style.display = "none";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

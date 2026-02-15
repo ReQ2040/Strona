@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mysliwce bojowe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"> 
+</head>
+<style>
+body {
+    background: linear-gradient(180deg, #0b0e13 0%, #141a2e 50%, #0b0e13 100%);
+    color: #f1f1f1;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    background: url("tlo.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    padding: 160px 0;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    max-width: 900px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.fighter-card {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background-color: #141824;
+    color: #f1f1f1;
+}
+
+.fighter-card:hover {
+    transform: scale(1.08) rotateX(3deg);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.fighter-card h5, .fighter-card p {
+    color: #f1f1f1;
+}
+
+.btn-elite {
+    padding: 16px 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-elite:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.navbar {
+    background: rgba(0,0,0,0.9) !important;
+}
+
+.bg-light {
+    background-color: #0b0e13 !important;
+    color: #f1f1f1 !important;
+}
+
+footer {
+    background-color: #000 !important; 
+    color: #f1f1f1 !important;         
+    padding: 40px 0;
+    text-align: center;
+}
+.fighter-card {
+    height: 100%;
+}
+
+.fighter-card img {
+    height: 200px;      
+    object-fit: cover; 
+}
+
+.carousel img {
+    height: 320px;      
+    object-fit: cover; 
+}
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Mysliwce Swiata</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Strona glowna</a></li>
+        <li class="nav-item"><a class="nav-link" href="modele.html">Modele</a></li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="technologie.html">Technologie</a></li>
+        <li class="nav-item"><a class="nav-link" href="uzbrojenie.html">Uzbrojenie</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero text-white text-center">
+    <div class="container" data-aos="fade-down" data-aos-duration="1200">
+        <h1 class="display-2 fw-bold">Potęga nowoczesnych myśliwców</h1>
+        <p class="hero-text mt-4">
+            Nowoczesne myśliwce bojowe stanowią fundament współczesnych sił powietrznych.
+            Łączą ogromną prędkość, zaawansowaną elektronikę i technologie stealth.
+        </p>
+        <p class="hero-text">
+            Dzięki nim państwa mogą chronić przestrzeń powietrzną, reagować na zagrożenia
+            i utrzymywać przewagę militarną.
+        </p>
+        <a href="#fighters" class="btn btn-elite mt-5" data-aos="zoom-in" data-aos-duration="1000">Poznaj najnowocześniejsze myśliwce</a>
+    </div>
+</header>
+
+<section class="container my-5 text-center" data-aos="fade-up" data-aos-duration="1200">
+    <h2 class="fw-bold mb-4">Czym są myśliwce bojowe?</h2>
+    <p>
+        Myśliwce bojowe to samoloty wojskowe przeznaczone do prowadzenia walki w powietrzu oraz wykonywania zadań ofensywnych i defensywnych.
+        Ich głównym celem jest eliminacja wrogich statków powietrznych oraz ochrona własnych jednostek.
+    </p>
+    <p>
+        Konstrukcja myśliwców uległa ogromnym zmianom na przestrzeni lat, od prostych maszyn z czasów I wojny światowej, przez odrzutowce zimnej wojny,
+        aż po dzisiejsze myśliwce piątej generacji wyposażone w technologie stealth i sztuczną inteligencję.
+    </p>
+</section>
+
+<section id="fighters" class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-5" data-aos="fade-up" data-aos-duration="1200">Najnowocześniejsze myśliwce świata</h2>
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card fighter-card" onclick="toggle('f22')">
+                    <img src="f221.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5>F-22 Raptor</h5>
+                        <p> Stealth - Prędkość - Radar AESA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                <div class="card fighter-card" onclick="toggle('f35')">
+                    <img src="f351.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>F-35 Lightning II</h5>
+                        <p> Stealth - Multirole - Sensory</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card fighter-card" onclick="toggle('su57')">
+                    <img src="su571.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Su-57</h5>
+                        <p> Stealth - Manewrowość - Radar 5G</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                <div class="card fighter-card" onclick="toggle('j20')">
+                    <img src="j201.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Chengdu J-20</h5>
+                        <p> Stealth - Chiński myśliwiec - Nowoczesne radary</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-4">
+    <div id="details" class="container d-none text-center">
+        <h3 id="title" class="fw-bold" data-aos="fade-down"></h3>
+        <div id="text" class="text-start mt-3" style="max-width:900px; margin:auto;" data-aos="fade-up"></div>
+
+        <div id="carousel" class="carousel slide my-4" style="max-width:500px; margin:auto;" data-aos="zoom-in">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="img1" class="d-block w-100 rounded">
+                </div>
+                <div class="carousel-item">
+                    <img id="img2" class="d-block w-100 rounded">
+                </div>
+                <div class="carousel-item">
+                    <img id="img3" class="d-block w-100 rounded">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <a id="video" target="_blank" class="btn btn-elite mt-3" data-aos="fade-up">Obejrzyj film o myśliwcu</a>
+    </div>
+</section>
+
+<section class="container my-5 text-center" data-aos="fade-up">
+    <h2 class="fw-bold mb-4">Znaczenie myśliwców we współczesnym świecie</h2>
+    <p>
+        Nowoczesne myśliwce są symbolem przewagi technologicznej państwa.
+        Zapewniają bezpieczeństwo, możliwość precyzyjnej obrony i odstraszania przeciwnika.
+    </p>
+    <p>
+        Ich rozwój nieustannie postępuje, wprowadzając coraz nowocześniejsze systemy elektroniczne,
+        radarowe i stealth, co czyni je kluczowym elementem strategii obronnej.
+    </p>
+</section>
+
+<footer class="footer-custom">
+    Franciszek Sabiniarz - Strona o myśliwcach
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init(); 
+
+const data = {
+    f22: {
+        title: "F-22 Raptor",
+        text: `
+        <p>F-22 Raptor to amerykański myśliwiec piątej generacji stworzony dla dominacji powietrznej.</p>
+        <p>Wyposażony w technologie stealth, radar AESA i wyjątkową manewrowość, jest jednym z najpotężniejszych myśliwców na świecie.</p>
+        <p>Jego prędkość przekracza Mach 2, a manewrowość daje pilotowi ogromną przewagę w powietrzu.</p>
+        <p>Samolot może wykonywać misje ofensywne i defensywne, chroniąc przestrzeń powietrzną Stanów Zjednoczonych.</p>
+        <p>F-22 posiada nowoczesne systemy łączności i integracji danych, co pozwala na kontrolę pola walki w czasie rzeczywistym.</p>
+        <p>Jest symbolem przewagi technologicznej i fundamentem amerykańskich sił powietrznych.</p>
+        `,
+        img1: "f222.png",
+        img2: "f223.jpg",
+        img3: "f224.jpg",
+        video: "https://www.youtube.com/watch?v=YbzX7oGhm8w"
+    },
+    f35: {
+        title: "F-35 Lightning II",
+        text: `
+        <p>F-35 to wielozadaniowy myśliwiec nowej generacji, łączący funkcje myśliwca, bombowca i samolotu rozpoznawczego.</p>
+        <p>Wyposażony w nowoczesne systemy integracji danych i komunikacji satelitarnej.</p>
+        <p>Pilot ma pełny obraz pola walki dzięki zintegrowanym sensorom.</p>
+        <p>Charakteryzuje się niską wykrywalnością i zdolnością do wykonywania skomplikowanych misji bojowych.</p>
+        <p>Wykorzystywany przez wiele państw NATO, stanowi kluczowy element nowoczesnych sił powietrznych.</p>
+        <p>Jego rozwój pokazuje kierunek współczesnego lotnictwa wojskowego.</p>
+        `,
+        img1: "f352.webp",
+        img2: "f353.jpg",
+        img3: "f354.jpg",
+        video: "https://www.youtube.com/watch?v=W41nCCFZgyA"
+    },
+    su57: {
+        title: "Su-57",
+        text: `
+        <p>Su-57 to rosyjski myśliwiec piątej generacji, zaprojektowany z naciskiem na manewrowość i walkę w bliskim kontakcie.</p>
+        <p>Wyposażony w technologie stealth i nowoczesne systemy radarowe.</p>
+        <p>Może działać zarówno w misjach ofensywnych, jak i defensywnych.</p>
+        <p>Su-57 jest częścią modernizacji rosyjskich sił powietrznych i pokazuje rozwój nowoczesnego lotnictwa wojskowego.</p>
+        <p>Dzięki swoim zdolnościom manewrowym i prędkości zapewnia przewagę w powietrzu.</p>
+        <p>Jest jednym z najważniejszych elementów rosyjskiej strategii obronnej.</p>
+        `,
+        img1: "su572.jpg",
+        img2: "su573.jpg",
+        img3: "su574.jpg",
+        video: "https://www.youtube.com/watch?v=FE6CTvs_g9Y"
+    },
+    j20: {
+        title: "Chengdu J-20",
+        text: `
+        <p>Chengdu J-20 to chiński myśliwiec piątej generacji, zaprojektowany w celu zwiększenia zdolności obronnych Chin.</p>
+        <p>Wykorzystuje technologie stealth i zaawansowane systemy radarowe.</p>
+        <p>Może prowadzić misje ofensywne i defensywne, a jego rozwój pokazuje ambicje Chin w lotnictwie wojskowym.</p>
+        <p>J-20 jest symbolem nowoczesnej chińskiej floty powietrznej.</p>
+        <p>Samolot posiada nowoczesne systemy integracji danych i radarów, które pozwalają na pełną kontrolę pola walki.</p>
+        <p>Jest jednym z najważniejszych myśliwców w regionie Azji i Pacyfiku.</p>
+        `,
+        img1: "j202.jpg",
+        img2: "j203.jpg",
+        img3: "j204.jpg",
+        video: "https://www.youtube.com/watch?v=Sz_GDjN0w3Y"
+    }
+};
+
+let current = null;
+function toggle(type) {
+    const details = document.getElementById("details");
+    if(current === type) {
+        details.classList.add("d-none");
+        current = null;
+    } else {
+        current = type;
+        details.classList.remove("d-none");
+        document.getElementById("title").innerText = data[type].title;
+        document.getElementById("text").innerHTML = data[type].text;
+        document.getElementById("img1").src = data[type].img1;
+        document.getElementById("img2").src = data[type].img2;
+        document.getElementById("img3").src = data[type].img3;
+        document.getElementById("video").href = data[type].video;
+    }
+}
+</script>
+</body>
+</html>

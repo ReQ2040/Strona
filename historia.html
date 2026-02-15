@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Historia Myśliwców | Raport Wojskowy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        180deg,
+        #0b0e13 0%,
+        #141a2e 50%,
+        #0b0e13 100%
+    );
+    color:#f1f1f1;
+}
+
+main {
+    flex: 1; 
+}
+
+.navbar { background:rgba(0,0,0,0.9); }
+
+.hero {
+    height:75vh;
+    background:url("img/hero_historia.jpg") center/cover fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.hero h1 { font-size:4rem; text-shadow:0 0 40px black; }
+
+.section-dark {
+    padding:110px 0;
+}
+.section-image {
+    padding:110px 0;
+    background:url("img/bg_tech.jpg") center/cover fixed;
+}
+
+.history-box {
+    background:#141824;
+    border-radius:20px;
+    padding:45px;
+    margin-bottom:60px;
+    box-shadow:0 0 45px rgba(0,0,0,0.5);
+}
+.history-box h3 { color:#7c88ff; margin-bottom:25px; }
+.history-box p { line-height:2; font-size:1.05rem; }
+
+.timeline { border-left:4px solid #4e5bff; padding-left:40px; }
+.timeline-item { margin-bottom:60px; }
+.timeline-item span {
+    color:#7c88ff;
+    font-weight:bold;
+    font-size:1.15rem;
+}
+
+.gen-slider {
+    background:#141824;
+    border-radius:20px;
+    padding:45px;
+    margin-top:0;
+    margin-bottom:60px;
+    text-align:center;
+    box-shadow:0 0 45px rgba(0,0,0,0.5);
+    border:1px solid #222;
+}
+
+.gen-slider h3 {
+    color:#7c88ff;
+    margin-bottom:25px;
+}
+
+.gen-slider p {
+    line-height:1.8;
+    font-size:1rem;
+    color:#f1f1f1;
+}
+
+
+footer {
+    background:black;
+    padding:40px;
+    text-align:center;
+    color:#888;
+    width: 100%;
+}
+
+.gen-slider img {
+    width: 100%;         
+    height: 600px;       
+    object-fit: cover;    
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: block;       
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Myśliwce Świata</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link" href="modele.html">Modele</a></li>
+        <li class="nav-item"><a class="nav-link active" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="technologie.html">Technologie</a></li>
+        <li class="nav-item"><a class="nav-link" href="uzbrojenie.html">Uzbrojenie</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="hero">
+<div>
+<h1>Historia Myśliwców Bojowych</h1>
+<p class="fs-5">
+Ewolucja dominacji powietrznej od pierwszych konstrukcji odrzutowych
+do współczesnych systemów przewagi informacyjnej
+</p>
+</div>
+</section>
+
+<section class="section-dark">
+<div class="container">
+
+<div class="history-box">
+<h3>Narodziny lotnictwa wojskowego</h3>
+<p>
+Narodziny lotnictwa wojskowego były jednym z najbardziej przełomowych momentów
+w historii konfliktów zbrojnych. Początkowo samoloty traktowane były jako ciekawostka
+techniczna, bez realnej wartości bojowej. Jednak już w czasie I wojny światowej
+szybko zrozumiano, że przestrzeń powietrzna może stać się nowym polem walki.
+</p>
+<p>
+Pierwsze maszyny wykonywały zadania obserwacyjne, korygując ogień artylerii
+i dostarczając informacji o ruchach wojsk przeciwnika. Brak uzbrojenia
+powodował, że piloci polegali głównie na unikach i wysokości lotu.
+Z czasem zaczęto eksperymentować z ręcznym uzbrojeniem, co zapoczątkowało
+ewolucję w kierunku wyspecjalizowanych myśliwców.
+</p>
+</div>
+
+<div class="history-box">
+<h3>Pierwsze starcia powietrzne</h3>
+<p>
+Pierwsze walki powietrzne miały charakter improwizowany i chaotyczny.
+Piloci nie posiadali jeszcze wypracowanych doktryn ani taktyk walki.
+Starcia odbywały się na niewielkich wysokościach, a przewagę dawało
+doświadczenie, refleks oraz odwaga.
+</p>
+<p>
+Z czasem pojawiły się pierwsze dedykowane myśliwce,
+wyposażone w zsynchronizowane karabiny maszynowe.
+To właśnie wtedy narodziły się podstawy walki kołowej,
+ataków z przewagi wysokości oraz osłaniania formacji bombowych.
+Powietrze stało się pełnoprawnym polem bitwy.
+</p>
+</div>
+
+<div class="container">
+<div class="history-box">
+<h3>Początki dominacji powietrznej</h3>
+<p>
+Pierwsze myśliwce bojowe pojawiły się jako odpowiedź na gwałtowny rozwój lotnictwa wojskowego
+w pierwszej połowie XX wieku. Początkowo samoloty wykorzystywane były głównie do rozpoznania,
+jednak bardzo szybko dostrzeżono potrzebę ich ochrony oraz zwalczania maszyn przeciwnika.
+</p>
+<p>
+Rozwój napędu odrzutowego po II wojnie światowej zapoczątkował prawdziwą rewolucję w myśleniu
+o walce powietrznej. Prędkości przekraczające barierę dźwięku, nowe typy uzbrojenia
+oraz coraz bardziej zaawansowane systemy celownicze sprawiły, że przewaga w powietrzu
+stała się jednym z kluczowych czynników decydujących o wyniku konfliktu zbrojnego.
+</p>
+<p>
+Od tego momentu państwa zaczęły inwestować ogromne środki w rozwój myśliwców,
+traktując je nie tylko jako broń, ale jako symbol potęgi technologicznej i militarnej.
+</p>
+</div>
+</div>
+
+<section class="section-image">
+<div class="container">
+<h2 class="text-center mb-5">Kamienie milowe rozwoju myśliwców</h2>
+<div class="timeline">
+
+<div class="timeline-item">
+<span>1970–1980</span>
+<p>
+Okres ten charakteryzował się skupieniem na osiągach kinetycznych.
+Projektanci koncentrowali się na prędkości maksymalnej, wznoszeniu
+oraz manewrowości. Myśliwce tego okresu były surowe, ale niezwykle szybkie
+i wymagające od pilotów ogromnych umiejętności.
+</p>
+</div>
+
+<div class="timeline-item">
+<span>1990–2000</span>
+<p>
+Nastąpił gwałtowny rozwój elektroniki pokładowej. Radary impulsowo-dopplerowskie,
+wyświetlacze HUD oraz pierwsze systemy walki sieciocentrycznej
+diametralnie zmieniły sposób prowadzenia walki powietrznej.
+</p>
+</div>
+
+<div class="timeline-item">
+<span>2000–2010</span>
+<p>
+Technologia stealth oraz materiały pochłaniające fale radarowe
+stały się fundamentem nowoczesnych myśliwców. Samolot przestał być
+jedynie nośnikiem broni, a stał się platformą sensorów i danych.
+</p>
+</div>
+
+<div class="timeline-item">
+<span>2010–obecnie</span>
+<p>
+Współczesne myśliwce to latające centra dowodzenia.
+Fuzja danych, sztuczna inteligencja oraz zdolność współpracy z dronami
+definiują nowy wymiar dominacji powietrznej.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section-dark">
+<div class="container">
+<h2 class="text-center mb-5">Generacje myśliwców bojowych</h2>
+<div class="gen-slider">
+<h3 id="genTitle">I Generacja</h3>
+<img id="genImage" src="gen1.jpg">
+<p id="genDesc" class="mt-4">
+Pierwsze konstrukcje odrzutowe stanowiły fundament współczesnego lotnictwa wojskowego.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section-image">
+<div class="container">
+<h2 class="text-center mb-5">Konflikty powietrzne</h2>
+<div class="timeline">
+
+<div class="timeline-item">
+<span>1950–1953</span>
+<p>
+Wojna Koreańska była pierwszym konfliktem, w którym na masową skalę doszło
+do walk między samolotami odrzutowymi. Starcia MiG-15 i F-86
+ustanowiły podstawy nowoczesnej taktyki walki powietrznej.
+</p>
+</div>
+
+<div class="timeline-item">
+<span>1964–1975</span>
+<p>
+Wietnam ujawnił ograniczenia technologii i znaczenie szkolenia pilotów.
+Pomimo przewagi technologicznej, kluczowa okazała się taktyka
+oraz adaptacja do warunków bojowych.
+</p>
+</div>
+
+<div class="timeline-item">
+<span>1991</span>
+<p>
+Operacja Pustynna Burza pokazała światową dominację technologiczną Zachodu.
+Przewaga informacyjna i precyzyjne uderzenia powietrzne
+zdecydowały o szybkim zakończeniu konfliktu.
+</p>
+</div>
+
+<div class="timeline-item">
+<span>2014–obecnie</span>
+<p>
+Konflikt na Ukrainie pokazuje nowe oblicze wojny powietrznej,
+gdzie obok myśliwców kluczową rolę odgrywają drony,
+systemy WRE oraz rozpoznanie satelitarne.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+</main>
+
+<footer>
+Franciszek Sabiniarz - Strona o myśliwcach
+</footer>
+
+<script>
+const gens=[
+ {t:"I Generacja",i:"gen1.jpg",d:"Narodziny lotnictwa odrzutowego."},
+ {t:"II Generacja",i:"gen2.jpg",d:"Radar i pierwsze rakiety kierowane."},
+ {t:"III Generacja",i:"gen3.jpg",d:"Manewrowość i doświadczenia bojowe."},
+ {t:"IV Generacja",i:"gen4.jpg",d:"Cyfrowa awionika i systemy BVR."},
+ {t:"V Generacja",i:"gen5.jpg",d:"Stealth i przewaga informacyjna."}
+];
+let g=0;
+setInterval(()=>{
+ g=(g+1)%gens.length;
+ genTitle.innerText=gens[g].t;
+ genImage.src=gens[g].i;
+ genDesc.innerText=gens[g].d;
+},4000);
+
+function reveal(e){
+ e.stopPropagation();
+ const b=e.target.parentElement;
+ b.querySelector(".redacted").style.display="none";
+ b.querySelector(".revealed").style.display="block";
+ b.querySelector(".status span").innerText="ODTAJNIONE";
+ e.target.style.display="none";
+}
+function toggleClassified(){ document.body.classList.toggle("classified"); }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
